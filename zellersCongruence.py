@@ -1,3 +1,7 @@
+'''
+This is a python program to calculate the day of the week using Zeller's Congruence.
+'''
+
 import math
 
 class DateCalculator:
@@ -6,10 +10,13 @@ class DateCalculator:
         self.m = m
         self.q = q
 
+        # Adjust the months January and February
         if m == 1 or m == 2:
             self.m += 12
             self.y -= 1
 
+
+    # Function to compute day of the week
     def computeDay(self):
         K = self.y % 100
         J = self.y // 100

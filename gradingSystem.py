@@ -72,3 +72,6 @@ scores = result[1]
 
 for i in range(len(result)):
     print(f"{names[i]} has a score of {scores[i]}: Grade {calculate_grade(scores[i])}")
+
+average = calculate_average(scores)
+print(f"The average for the scores is { average }")

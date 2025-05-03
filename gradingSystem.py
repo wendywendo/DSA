@@ -43,7 +43,7 @@ def get_names_score() -> tuple[list[str], list[float]]:
                 except ValueError:
                     print("Invalid input")
 
-        return names_of_students, scores
+        return names_of_students, scores 
 
 def calculate_average(scores: list[int]) -> float:
     return sum(scores) / len(scores)
@@ -70,7 +70,7 @@ result = get_names_score()
 names = result[0]
 scores = result[1]
 
-for i in range(len(result)):
+for i in range(len(names)):
     print(f"{names[i]} has a score of {scores[i]}: Grade {calculate_grade(scores[i])}")
 
 average = calculate_average(scores)

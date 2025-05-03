@@ -1,5 +1,8 @@
 '''
 This is a python program to calculate the day of the week using Zeller's Congruence.
+q = date
+m = month
+y = year
 '''
 
 import math

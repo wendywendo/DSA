@@ -106,6 +106,7 @@ if __name__ == "__main__":
 
     # ─────────────────────────────────────────────────────────────────────────────
     """IMPLEMENT LOGIC TO PRINT THE DISCOUNTED CART ON TERMINAL"""
+    checkout(disc_cart)
 
     # 3) Applying Tax
     taxed_cart = TaxedCart(tax_rate=0.07)
@@ -113,7 +114,7 @@ if __name__ == "__main__":
     taxed_cart.add_item("Orange", 96, 11.50)
     taxed_cart.add_item("Kiwi", 3, 1.50)
     print(">>> Applying a 12% Tax  <<<")
-    checkout(taxed_cart)
+    
     # ─────────────────────────────────────────────────────────────────────────────
     """IMPLEMENT LOGIC TO PRINT THE TAXED CART ON TERMINAL"""
-    taxed_cart.cart_contents()
+    checkout(taxed_cart)
